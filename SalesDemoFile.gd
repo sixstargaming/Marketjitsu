@@ -58,11 +58,11 @@ func generateMark():
 
 # Debug UI (Prototyping)
 func updateDebugUI():
-	var lblOption : Label
+	var btnOption : Button
 	var albl = ["Q", "W", "E", "R", "T", "Y"]
 	for i in range(6):
-		lblOption = get_node("lbl" + albl[i])
-		lblOption.set_text(optionArray[i].text)
+		btnOption = get_node("btn" + albl[i])
+		btnOption.set_text(optionArray[i].text)
 	var lblDebugHP = get_node("lblDebugHP")
 	lblDebugHP.set_text("Progress: " + str(Mark.GetProgress()))
 	var lblInformation = get_node("lblInformation")
@@ -91,3 +91,22 @@ func optionSelected(selectedOption : Option):
 	
 	boolResetOptions = true # Get new options
 	boolPrintDebug = true # Debug purposes
+
+# Buttons Pressed
+func _on_btnQ_pressed():
+	optionSelected(optionArray[0])
+
+func _on_btnW_pressed():
+	optionSelected(optionArray[1])
+	
+func _on_btnE_pressed():
+	optionSelected(optionArray[2])
+
+func _on_btnR_pressed():
+	optionSelected(optionArray[3])
+
+func _on_btnT_pressed():
+	optionSelected(optionArray[4])
+
+func _on_btnY_pressed():
+	optionSelected(optionArray[5])
