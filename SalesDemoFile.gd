@@ -77,13 +77,6 @@ func updateDebugUI():
 	sInfo = "Selling " + "Object" + " to " + Mark.GetName() + "\nAge: " + str(Mark.age) + "\nGender: " + str(dbgMarkGender) + "\nMoney: $" + str(Mark.money) + "\n\nOpenness: " + str(Mark.openness) + "\nConscientiousness: " + str(Mark.conscientiousness) + "\nExtraversion: " + str(Mark.extraversion) + "\nAgreeableness: " + str(Mark.agreeableness) + "\nNeuroticism: " + str(Mark.neuroticism)
 	lblInformation.set_text(sInfo)
 	boolPrintDebug = false
-	
-	
-	var openness : int
-var conscientiousness : int
-var extraversion : int
-var agreeableness : int
-var neuroticism : int
 
 # Option logic
 func optionSelected(selectedOption : Option):
