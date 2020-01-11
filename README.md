@@ -1,2 +1,0 @@
-# Marketjitsu
-Sales Demo FIle

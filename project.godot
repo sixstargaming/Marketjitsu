@@ -1,0 +1,70 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Object",
+"class": "ENUMS",
+"language": "GDScript",
+"path": "res://ENUMS.gd"
+}, {
+"base": "Object",
+"class": "Option",
+"language": "GDScript",
+"path": "res://Option.gd"
+}, {
+"base": "Object",
+"class": "Options",
+"language": "GDScript",
+"path": "res://Options.gd"
+}, {
+"base": "Object",
+"class": "SalesMark",
+"language": "GDScript",
+"path": "res://SalesMark.gd"
+} ]
+_global_script_class_icons={
+"ENUMS": "",
+"Option": "",
+"Options": "",
+"SalesMark": ""
+}
+
+[application]
+
+config/name="SalesDemo"
+run/main_scene="res://SalesDemoFile.tscn"
+config/icon="res://icon.png"
+
+[input]
+
+Event_Q={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":81,"unicode":0,"echo":false,"script":null)
+ ]
+}
+Event_W={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":87,"unicode":0,"echo":false,"script":null)
+ ]
+}
+Event_E={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":69,"unicode":0,"echo":false,"script":null)
+ ]
+}
+Event_R={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":82,"unicode":0,"echo":false,"script":null)
+ ]
+}
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
